@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<head>
+    <title>DGNews - Главная</title>
+    <meta name="viewport" width="device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+     <!--##########   [HEADER - NAVBAR]   ##########-->
+    <header>
+        <div class="navbar">
+            <div class="container">
+
+                <div class="header-logo">
+                    <a href="#home"> <img style="max-width:20vh" src="resources/items/DGNews.png" alt="DGNews_img"> </a>
+                </div>
+
+                <ul class="nav-menu">
+                    <li class="item"><a class="item" href="#home">Главная</a></li>
+                    <li class="item"><a class="item" href="#news">Новости</a></li>
+                    <li class="item"><a class="item" href="#reviws">Обзоры</a></li>
+                    <li class="item"><a class="item" href="#forum">Форум</a></li>
+                    <li class="item"><a class="item" href="#contacts">Контакты</a></li>
+                </ul>
+
+              
+
+            </div>
+        </div>
+
+    </header>
+
+        
+    <div class="box">
+		<div class="main-box">
+			<div class="news-card"style="color: white">
+				<h1>Новости</h1>
+				<div class="text">
+                     <!--CURRENT DATE VIEW -->  
+                    <div id="current_date_time_block" style="color:rgb(67, 14, 192);margin-bottom:25px"></div>
+                        <script type="text/javascript">
+                            function zero_first_format(value)
+                            {
+                                if (value < 10)
+                                {
+                                    value='0'+value;
+                                }
+                                return value;
+                            }
+
+
+                            function date_time()
+                            {
+                                var current_datetime = new Date();
+                                var day = zero_first_format(current_datetime.getDate());
+                                var month = zero_first_format(current_datetime.getMonth()+1);
+                                var year = current_datetime.getFullYear();
+                        
+                                return "Новости на "+day+"."+month+"."+year;
+                            }
+                            document.getElementById('current_date_time_block').innerHTML = date_time();
+                        </script>
+                     <!--##########################################################-->  
+                    
+
+					<a href class="news-box"style="color: white;text-decoration: none">
+                        <span>8:00</span>
+                       <h6> Трейлер и подробности «Наследия» — масштабной модификации для шутера Metro 2033 Redux</h6>
+                    </a>
+
+                    <a href class="news-box"style="color: white;text-decoration: none">
+                        <span>7:56</span>
+                       <h6> Смартфоны Xiaomi 13 со Snapdragon 8 Gen 2 будут на 40% производительней Xiaomi 12 </h6>
+                    </a>
+
+                    <a href class="news-box"style="color: white;text-decoration: none">
+                        <span>7:45</span>
+                       <h6> Nvidia объявила дату выпуска Portal RTX </h6>
+                    </a>
+
+                    <a href class="news-box"style="color: white;text-decoration: none">
+                        <span>7:35</span>
+                       <h6> Илон Маск начал борьбу с Apple за свободу слова </h6>
+                    </a>
+
+                    <a href class="news-box"style="color: white;text-decoration: none">
+                        <span>7:32</span>
+                       <h6> Фантастические миры в трейлере дополнения Far Cry 6 Lost Between Worlds </h6>
+                    </a>
+
+                    <a href class="news-box"style="color: white;text-decoration: none">
+                        <span>7:25</span>
+                       <h6> Samsung представила память GDDR6W с удвоенной емкостью по сравнению с GDDR6X </h6>
+                    </a>
+
+                    <a href class="news-box"style="color: white;text-decoration: none">
+                        <span>7:17</span>
+                       <h6> Представлен смартфон ZTE Axon 40 Ultra Aerospace Edition с 18 ГБ памяти </h6>
+                    </a>
+                    <a href class="news-box"style="color: white;text-decoration: none">
+                        <span>7:05</span>
+                       <h6> Легендарное издание Mass Effect и Biomutant могут войти в подборку PlayStation Plus декабря </h6>
+                    </a>
+                    <!--Конец -->
+				</div>
+                
+			</div>
+
+            <!--################################# REVIEWS BLOCK #################################-->
+			<!--################################# REWIEW 1 #################################-->
+            <div class="Neww"style="color: white">
+                <div class="review-card"style="color: white">
+                    <div class="reviev-box">
+                        <a href="#" style="text-decoration: none;"><span>Обзор TCL NXTPAPER 10s: насколько уникальным может быть планшет?</span></a>
+                        <div class="pra">
+                            <p>Некоторое время назад TCL получила престижную премию EISA в номинации «Инновация года в области защиты зрения».</p>
+                        </div>
+                        <div class="img">
+                            <img src="image/planshet.jpg"width="96%" height="420px">
+                        </div>
+                        <a style="color:white"><i class="fa fa-send-o"></i> 36 комментариев</a>
+                    </div>
+                    
+                    <!--################################# REWIEW 2 #################################-->
+                    <div class="reviev-box">
+                        <a href style="text-decoration: none;"><span>Обзор Aurender A15: искусство баланса</span></a>
+                        <div class="pra">
+                            <p>Добиться бескомпромиссного звука от цифрового источника не легче, чем от аналогового, ведь у каждой системы свои особенности. А уж если устройство объединяет в себе оба подхода, сделать его аудиофильским — это настоящее искусство.</p>
+                        </div>
+                        <div class="img">
+                            <img src="image/aaaa.jpg"width="94%" height="auto">
+                        </div>
+                        <a style="color:white"><i class="fa fa-send-o"></i> 12 комментариев</a>
+                    </div>
+
+                </div>
+                <!--################################# REWIEW 3 #################################-->
+                <div class="review-card"style="color: white">
+                    <div class="reviev-box">
+                        <a href style="text-decoration: none;"><span>Обзор TCL NXTPAPER 10s: насколько уникальным может быть планшет?</span></a>
+                        <div class="pra">
+                            <p>Обзор Amazfit GTR 4: микрофон, динамик, GPS и прочие радости.</p>
+                        </div>
+                        <div class="img">
+                            <img src="image/amazfit.jpg"width="96%" height="auto">
+                        </div>
+                        <a style="color:white"><i class="fa fa-send-o"></i> 67 комментариев</a>
+                    </div>
+                    
+                    <!--################################# REWIEW 4 #################################-->
+                    <div class="reviev-box">
+                        <a href style="text-decoration: none;"><span>Обзор Aurender A15: искусство баланса</span></a>
+                        <div class="pra">
+                            <p>Сбер вернул бесконтактную оплату на Android в России</p>
+                        </div>
+                        <div class="img">
+                            <img src="image/sber.jpg"width="85%" height="auto">
+                        </div>
+                        <a style="color:white"><i class="fa fa-send-o"></i> 12 комментариев</a>
+                    </div>
+                </div>
+                    <!--################################# REWIEW 5 #################################-->
+                <div class="review-card"style="color: white">
+                    <div class="reviev-box">
+                        <a href style="text-decoration: none;"><span>Россияне потеряли интерес к iPhone 14. Почему?</span></a>
+                        <div class="pra">
+                            <p>О спаде популярности гаджетов Apple в России сообщают «Известия» со ссылкой на опрос участников рынка. Согласно статистике, спрос на смартфоны серии iPhone 14 со времени осеннего релиза снизился в 2,5 раза, по сравнению с цифрами продаж устройств предыдущего поколения в прошлом году.</p>
+                        </div>
+                        <div class="img">
+                            <img src="image/iphone.jpg"width="96%" height="auto">
+                        </div>
+                        <a style="color:white"><i class="fa fa-send-o"></i> 103 комментария</a>
+                    </div>
+                    <!--################################# REWIEW 6 #################################-->
+                    <div class="reviev-box">
+                        <a href style="text-decoration: none;"><span>Почти безрамочный Xiaomi 13 засветился «в полный рост» на официальном рендере</span></a>
+                        <div class="pra">
+                            <p>Глава Xiaomi Лей Цзюнь опубликовал новое изображение будущего флагмана компании. Рендер демонстрирует дизайн фронтальной панели смартфона — одним из особенностей новинки станет дисплей с минимальной толщиной рамок даже в области пресловутого «подбородка».</p>
+                        </div >
+                        <div class="img">
+                            <img src="image/mi13.jpg"width="96%" height="auto">
+                        </div>
+                        <a style="color:white"><i class="fa fa-send-o"></i> 67 комментариев</a>
+                    </div>
+                    
+            </div>
+            <!--################################# REWIEWS END #################################-->
+
+		</div>
+	</div>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <footer>
+        <!--Блок для связи с нами -->
+        <p style="color: white;"> Связь с нами</p>
+        <div class="social">
+            <a href="https://vk.com/vaiman3"><i class='fa fa-vk'></i><h6>  https://vk.com/vaiman3</h6></a>
+            <a style="color:white"><i class="fa fa-envelope"></i> <h6> vaiman3@gmail.com</h6></a>
+            <a style="color:white"><i class='fa fa-phone'></i> <h6> 8-800-555-35-35</h6></a>
+        </div>
+        <!--######################-->
+    </footer>
+</body>
